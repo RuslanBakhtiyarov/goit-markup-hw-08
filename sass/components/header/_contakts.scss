@@ -1,0 +1,105 @@
+/* КОНТАКТЫ */
+
+.contakts-header {
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.textstyle {
+	display: flex;
+	align-items: center;
+
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: 500;
+	font-size: $font-size;
+	letter-spacing: 0.02em;
+	color: #757575;
+	text-decoration: none;
+	transition-duration: 250ms;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
+
+	&:not(:last-child) {
+		margin-right: 50px;
+
+		@media screen and (max-width: 767px) {
+			margin-right: 0px;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			margin-right: 0px;
+		}
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	@media screen and (max-width: 767px) {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: 0.02em;
+	}
+}
+.address-link {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 16px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-bottom: 10px;
+	}
+}
+.address-link__icon-mail {
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	fill: currentColor;
+
+	@media screen and(max-width: 767px) {
+		width: 16px;
+		height: 12px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 14px;
+		height: 10px;
+	}
+}
+
+.address-link:hover {
+	fill: $color-blue;
+	color: $color-blue;
+}
+
+.phone-link__icon-phone {
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+	fill: currentColor;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 10px;
+		height: 14px;
+	}
+}
+
+.phone-link:hover {
+	fill: $color-blue;
+	color: $color-blue;
+}
+
+.article {
+	display: block;
+	margin: 0px;
+}

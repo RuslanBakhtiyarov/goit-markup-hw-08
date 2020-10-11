@@ -1,0 +1,102 @@
+/*секция 1*/
+
+.section {
+	width: 1600px;
+	padding-top: 95px;
+	padding-bottom: 95px;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (max-width: 767px) {
+		max-width: 100%;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 100%;
+	}
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+.bissnes {
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	@media screen and (max-width: 1199px) {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.fon {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header480.jpg");
+		/* 	background-repeat: no-repeat;
+		background-position: center; */
+		background-size: cover;
+	}
+
+	/* @media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		.fon {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../../../images/header480@2x.jpg");
+		}
+	} */
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.fon {
+		background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header768.jpg");
+		/* background-repeat: no-repeat;
+		background-position: center; */
+		background-size: cover;
+	}
+
+	/* @media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		.fon {
+			background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/header768@2x.jpg");
+		}
+	} */
+}
+@media screen and (min-width: 1200px) {
+	.fon {
+		/* max-width: 1600px; */
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.png");
+		/* background-repeat: no-repeat;
+		background-position: center; */
+		background-size: cover;
+	}
+
+	/* @media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		.fon {
+			background-image: url("../../../images/Img@2x.png");
+		}
+	} */
+}
+
+.services {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.services__text {
+	font-family: $font-famili;
+	font-size: 44px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+
+	margin: 0px;
+	line-height: 60px;
+	color: #ffffff;
+
+	@media screen and (max-width: 1199px) {
+		font-size: 26px;
+		line-height: 42px;
+	}
+}

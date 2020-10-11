@@ -1,0 +1,43 @@
+/* СЕКЦИЯ 4 "Постоянные клиенты" */
+
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.section--client {
+	width: 1600px;
+	@media screen and (max-width: 767px) {
+		max-width: 100%;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 100%;
+	}
+
+	/* margin-left: auto;
+	margin-right: auto; */
+	/* @media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1600px;
+		margin-left: auto;
+		margin-right: auto;
+	} */
+}
+
+.subject {
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-top: 0px;
+	margin-bottom: 50px;
+
+	@media screen and (max-width: 1199px) {
+		font-size: 28px;
+		line-height: 33px;
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,349 @@
+/*ПОДВАЛ*/
+.footer {
+	background-color: $b-cdark;
+	width: 1600px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (max-width: 767px) {
+		max-width: 100%;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 100%;
+	}
+
+	/* margin-left: auto;
+	margin-right: auto; */
+
+	/* @media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1600px;
+		margin-left: auto;
+		margin-right: auto;
+	} */
+}
+
+.footer .footer-container {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.contakts {
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: inline-flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 60px;
+		&:nth-child(3n + 1) {
+			margin-right: 165px;
+		}
+		&:nth-last-child(-n + 1) {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.contakts--style {
+	margin-right: 70px;
+
+	@media screen and (max-width: 1199px) {
+		margin-right: 0px;
+	}
+}
+.logo-contakts {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	@media screen and (max-width: 767px) {
+		display: flex;
+		justify-content: center;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.logo-contakts__fontweb {
+	font-family: "Raleway";
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 26px;
+	color: $color-blue;
+	margin: 0px;
+
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+	}
+}
+
+.logo-contakts__fontstudio {
+	font-family: "raleway";
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 26px;
+	color: #ffffff;
+
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+	}
+}
+.address {
+	margin: 0px;
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.address__text {
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: 400;
+	font-size: $font-size;
+	line-height: 34px;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	margin: 0px;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		text-align: center;
+	}
+}
+
+.address__link {
+	font-style: $font-style;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	line-height: 34px;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	margin: 0px;
+	text-decoration: none;
+}
+
+.address__p {
+	margin: 0px;
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		text-align: center;
+	}
+}
+
+/* ПРИСОЕДИНЯЙСЯ */
+.contakts--socials {
+	margin-right: 93px;
+	@media screen and (max-width: 767px) {
+		display: block;
+		margin-right: 0px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: block;
+		padding-top: 13px;
+		margin-right: 0px;
+	}
+}
+
+.subject-socials {
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: $font-size;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 20px;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		text-align: center;
+	}
+}
+
+.social-join__list {
+	display: flex;
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
+}
+
+.social-join__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+/* ФОРМА */
+
+.block-form {
+	display: block;
+}
+
+.block-form__heading {
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: $font-size;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+
+	margin-top: 0px;
+	margin-bottom: 20px;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		text-align: center;
+	}
+}
+
+.form-send {
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
+}
+
+.form-send__mail {
+	margin-right: 12px;
+	@media screen and (max-width: 1199px) {
+		margin-right: 0px;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	@media screen and (max-width: 479px) {
+		margin-right: 0px;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.form-send__email {
+	max-width: 450px;
+	min-width: 170px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	padding-left: 16px;
+
+	background-color: rgba(0, 0, 0, 0);
+
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: $font-weight;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+
+	color: #ffffff;
+
+	&::placeholder {
+		font-family: $font-famili;
+		font-style: $font-style;
+		font-weight: $font-weight;
+		font-size: 16px;
+		letter-spacing: 0.03em;
+
+		color: rgba(255, 255, 255, 0.6);
+
+		/* padding-left: 16px; */
+	}
+	@media screen and (max-width: 479px) {
+		width: 100%;
+		height: 50px;
+		justify-content: center;
+	}
+	@media screen and (min-width: 480px) and (max-width: 1199px) {
+		width: 450px;
+		height: 50px;
+		justify-content: center;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+		height: 50px;
+	}
+}
+
+.form-send__btn {
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.btn-send {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	border: none;
+
+	background: $color-blue;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	color: $b-cheader;
+
+	margin: 0px;
+}
+
+.btn-send__icon {
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
